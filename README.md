@@ -44,11 +44,11 @@ To train the model(s) in the simulation studies of the supplementary, run this c
 ```train
 python train.py --data_type='simulation' --simu_G_file=<CHOICE1> --A_type=<CHOICE2> --node_number=<CHOICE3> --sample_size=<CHOICE4> --batch_size=<CHOICE5>
 ```
-CHOICE1 = 'S1_trueG.pkl', 'S2_trueG.pkl', 'S3_trueG.pkl', 'S4_trueG.pkl', corresponding to four scenarios respectively;
-CHOICE2 = 'Gaussian', 'Binary', corresponding to two types of exposure;
-CHOICE3 = 12, 32, according to the number of nodes in the selected scenario;
-CHOICE4 = 50, 500, according to the sample size in the selected setting;
-CHOICE5 = 25, 100, according to the sample size in the selected setting;
+- CHOICE1 = 'S1_trueG.pkl', 'S2_trueG.pkl', 'S3_trueG.pkl', 'S4_trueG.pkl', corresponding to four scenarios respectively;
+- CHOICE2 = 'Gaussian', 'Binary', corresponding to two types of exposure;
+- CHOICE3 = 12, 32, according to the number of nodes in the selected scenario;
+- CHOICE4 = 50, 500, according to the sample size in the selected setting;
+- CHOICE5 = 25, 100, according to the sample size in the selected setting.
 
 Example: 
 
