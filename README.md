@@ -31,7 +31,7 @@ In the era of causal revolution, identifying the causal effect of an exposure on
   3. `Realdata_COVID19_Summary.ipynb` - Summary code for tables and figures, written in Jupyter Notebook. 
   4. Figures - the interative graphical results on the real data analysis, stored in HTML format, and other figures.
 - Simulation:
-  1. `scenarios` - the true graphs for four scenarios in the simulation studies.
+  1. Scenarios - the true graphs for four scenarios in the simulation studies.
   2. ANOCE_Results - Saved results for each setting.
   3. `Table_S1_Summary.py` - Summary code for Table S1 in the supplementary article. 
   4. `Table_S2_Summary.py` - Summary code for Table S2 in the supplementary article.
