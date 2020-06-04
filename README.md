@@ -26,7 +26,7 @@ In the era of causal revolution, identifying the causal effect of an exposure on
 - `train.py` - the implementation of ANOCE-CVAE.
 - `utils.py` - graph simulation, data simulation, VAE utility functions, analysis of causal effects, and accuracy evaluation.
 - RealData:
-  1. `covid19.pkl` (and `covid19.csv`) - the real dataset for the COVDI-19 outbreak, where the first column is the exposure (i.e. 2020 Hubei lockdowns), the last colum presents the outcome (i.e. the increase rate of confirmed cases out of Hubei), and the middle 30 columns to 30 mediators (i.e. the selected major cities) ordered by cities' total migration scale during the data period (from Jan 12th to Feb 20th, 2020). Here, the information of cities' migration scale is scrapied from Baidu Qianxi (https://qianxi.baidu.com/, credit to the code from https://github.com/samelltiger/baidu_qx).
+  1. `covid19.pkl` (and `covid19.csv`) - the real dataset for the COVDI-19 outbreak, where the first column is the exposure (i.e. 2020 Hubei lockdowns), the last column presents the outcome (i.e. the increase rate of confirmed cases out of Hubei), and the middle 30 columns to 30 mediators (i.e. the selected major cities) ordered by cities' total migration scale during the data period (from Jan 12th to Feb 20th, 2020). Here, the information of cities' migration scale is scraped from Baidu Qianxi (https://qianxi.baidu.com/, credit to the code from https://github.com/samelltiger/baidu_qx).
   2. `ANOCE_COVID19_Results.data` - Saved results with 100 replications.
   3. `Realdata_COVID19_Summary.ipynb` - Summary code for tables and figures, written in Jupyter Notebook. 
   4. Figures - the interative graphical results on the real data analysis, stored in HTML format, and other figures.
@@ -66,7 +66,7 @@ python train.py --data_type='realdata' --real_data_file='covid19.pkl' --node_num
 
 See more details on the collection and meaning of the COVID-19 Dataset in our main text.  
 
-## Results: Interative Graphical Results of the Real Data Analysis on the COVID-19 Outbreak in China
+## Results: Interactive Graphical Results of the Real Data Analysis on the COVID-19 Outbreak in China
 
 We conclude that by locking Hubei down, China successfully reduced 49.7% of the daily new confirmed cases out of Hubei; about 84% of which was the indirect effect contributed via the reduced migration of major cities outside Hubei. Additionally, we quantify the individual effect for each city, where the infection within cities has been effectively controlled while the secondary migration among cities exacerbated the pandemic under the lockdown. A spreading network is further provided to interpret the interaction trend among cities. 
 
