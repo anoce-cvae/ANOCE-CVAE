@@ -30,9 +30,9 @@ In the era of causal revolution, identifying the causal effect of an exposure on
 - Simulation:
   1. Scenarios - the true graphs for four scenarios and six cases in the simulation studies.
       - `S1_trueG.pkl`: Scenario 1
-	    - `S2_trueG.pkl`: Scenario 2
-	    - `S3_trueG.pkl`: Scenario 3
-	    - `S4_trueG.pkl`: Scenario 4
+      - `S2_trueG.pkl`: Scenario 2
+      - `S3_trueG.pkl`: Scenario 3
+      - `S4_trueG.pkl`: Scenario 4
       - `s_ER1_trueG.pkl`: Case ER1
       - `s_ER2_trueG.pkl`: Case ER2
       - `s_ER4_trueG.pkl`: Case ER4
