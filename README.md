@@ -1,13 +1,10 @@
-# ANOCE: Analysis of Causal Effects with Application to the COVID-19 Spread in China
+# ANOCE: Analysis of Causal Effects with Multiple Mediators via Constrained Structural Learning
 
-This repository is the official implementation of `ANOCE: Analysis of Causal Effects with Application to the COVID-19 Spread in China`
+This repository is the official implementation of `ANOCE: Analysis of Causal Effects with Multiple Mediators via Constrained Structural Learning`
 
 ## Introduction
 
-In the era of causal revolution, identifying the causal effect of an exposure on the outcome of interest is an important problem in many areas, such as epidemics, medicine, genetics, and economics. Under a general causal graph, the exposure may have a direct effect on the outcome and also an indirect effect regulated by a set of mediators. An analysis of causal effects that interprets the causal mechanism contributed through mediators is hence challenging but on demand. To the best of our knowledge, there are no feasible algorithms that give an exact decomposition of the indirect effect on the level of individual mediators, due to common interaction among mediators in the complex graph. In this paper, we establish a new statistical framework to comprehensively characterize causal effects with multiple mediators, namely, ANalysis Of Causal Effects (ANOCE), under the linear structure equation model. We further connect the structure learning approach with our proposed causal graphical model, by extending Yu et al. (2019)'s model with a novel identification constraint that specifies the temporal causal relationship of variables. The proposed algorithm is applied to investigate the causal effects of 2020 Hubei lockdowns on reducing the spread of the coronavirus in Chinese major cities out of Hubei. We conclude that by locking Hubei down, China successfully reduced 49.7% of the daily new confirmed cases, about 84% of which was the indirect effect contributed via the migration of major cities outside Hubei. 
-
-### Our paper is now submitted to NIPS 2020.
-
+In the era of causal revolution, identifying the causal effect of an exposure on the outcome of interest is an important problem in many areas, such as epidemics, medicine, genetics, and economics. Under a general causal graph, the exposure may have a direct effect on the outcome and also an indirect effect regulated by a set of mediators. An analysis of causal effects that interprets the causal mechanism contributed through mediators is hence challenging but on demand. To the best of our knowledge, there are no feasible algorithms that give an exact decomposition of the indirect effect on the level of individual mediators, due to common interaction among mediators in the complex graph. In this paper, we establish a new statistical framework to comprehensively characterize causal effects with multiple mediators, namely, ANalysis Of Causal Effects (ANOCE), with a newly introduced definition of the mediator effect, under the linear structure equation model. We further propose a constrained causal structure learning method by incorporating a novel identification constraint that specifies the temporal causal relationship of variables. The proposed algorithm is applied to investigate the causal effects of 2020 Hubei lockdowns on reducing the spread of the coronavirus in Chinese major cities out of Hubei. 
 
 ## Requirements
 
@@ -31,7 +28,17 @@ In the era of causal revolution, identifying the causal effect of an exposure on
   3. `Realdata_COVID19_Summary.ipynb` - Summary code for tables and figures, written in Jupyter Notebook. 
   4. Figures - the interative graphical results on the real data analysis, stored in HTML format, and other figures.
 - Simulation:
-  1. Scenarios - the true graphs for four scenarios in the simulation studies.
+  1. Scenarios - the true graphs for four scenarios and six cases in the simulation studies.
+      - `S1_trueG.pkl`: Scenario 1
+	    - `S2_trueG.pkl`: Scenario 2
+	    - `S3_trueG.pkl`: Scenario 3
+	    - `S4_trueG.pkl`: Scenario 4
+      - `s_ER1_trueG.pkl`: Case ER1
+      - `s_ER2_trueG.pkl`: Case ER2
+      - `s_ER4_trueG.pkl`: Case ER4
+      - `s_SF1_trueG.pkl`: Case SF1
+      - `s_SF2_trueG.pkl`: Case SF2
+      - `s_SF4_trueG.pkl`: Case SF4
   2. ANOCE_Results - Saved results for each setting.
   3. `Table_S1_Summary.py` - Summary code for Table S1 in the supplementary article. 
   4. `Table_S2_Summary.py` - Summary code for Table S2 in the supplementary article.
@@ -39,12 +46,12 @@ In the era of causal revolution, identifying the causal effect of an exposure on
 
 ## Training (Simulation Studies)
 
-To train the model(s) in the simulation studies of the supplementary, run this command:
+To train the model(s) in the simulation studies, run this command:
 
 ```train
 python train.py --data_type='simulation' --simu_G_file=<CHOICE1> --A_type=<CHOICE2> --node_number=<CHOICE3> --sample_size=<CHOICE4> --batch_size=<CHOICE5>
 ```
-- CHOICE1 = 'S1_trueG.pkl', 'S2_trueG.pkl', 'S3_trueG.pkl', 'S4_trueG.pkl', corresponding to four scenarios respectively;
+- CHOICE1 = 'S1_trueG.pkl', 'S2_trueG.pkl', 'S3_trueG.pkl', 'S4_trueG.pkl', corresponding to four scenarios in Section 5.1, respectively; or 's_ER1_trueG.pkl' to 's_SF4_trueG.pkl' corresponding to six cases in Section 5.2;
 - CHOICE2 = 'Gaussian', 'Binary', corresponding to two types of exposure;
 - CHOICE3 = 12, 32, according to the number of nodes in the selected scenario;
 - CHOICE4 = 50, 500, according to the sample size in the selected setting;
