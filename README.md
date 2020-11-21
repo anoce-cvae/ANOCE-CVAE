@@ -77,17 +77,17 @@ See more details on the collection and meaning of the COVID-19 Dataset in our ma
 
 We conclude that by locking Hubei down, China successfully reduced 49.7% of the daily new confirmed cases out of Hubei; about 84% of which was the indirect effect contributed via the reduced migration of major cities outside Hubei. Additionally, we quantify the individual effect for each city, where the infection within cities has been effectively controlled while the secondary migration among cities exacerbated the pandemic under the lockdown. A spreading network is further provided to interpret the interaction trend among cities. 
 
-See [cities' direct effects (DMs) here](https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/COVID_19_DM.html).
+See [cities' direct effects (DMs) here](https://anoce-cvae.github.io/ANOCE-CVAE/RealData/Figures/COVID_19_DM.html).
 
 A snapshot for the above HTML:
 
-<img width="350" height="300" src="https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/covid_dm.png"/>
+<img width="350" height="300" src="https://anoce-cvae.github.io/ANOCE-CVAE/RealData/Figures/covid_dm.png"/>
  
 See also [cities' indirect effects (IMs) here](https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/COVID_19_IM.html).
 
 A snapshot for the above HTML:
 
-<img width="350" height="300" src="https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/covid_im.png"/>
+<img width="350" height="300" src="https://anoce-cvae.github.io/ANOCE-CVAE/RealData/Figures/covid_im.png"/>
 
 
 To better interpret the city's DM and IM, we divide the city's role in controlling the spread of the epidemic into two parts. The first part is the intensity of transmission within a particular city, which represents the infection within the city and corresponds to the direct effect of the mediator. The other part is the secondary migration of a particular city (the infected people from the area to other places) and thus is the indirect effect of a mediator. Clearly, a positive effect means spreading the virus while negative means control. 
@@ -95,11 +95,11 @@ To better interpret the city's DM and IM, we divide the city's role in controlli
 
 A spreading network is further provided to interpret the interaction among cities. 
 
-[The spreading network within 10 Cities (Wuhan, Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Chongqing, Zhengzhou, Changsha, and Xinyang).](https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/COVID_19_NET.html)
+[The spreading network within 10 Cities (Wuhan, Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Chongqing, Zhengzhou, Changsha, and Xinyang).](https://anoce-cvae.github.io/ANOCE-CVAE/RealData/Figures/COVID_19_NET.html)
 
 A snapshot for the above HTML:
 
-<img width="350" height="300" src="https://anoce-nips.github.io/ANOCE-CVAE/RealData/Figures/covid_net.png"/>
+<img width="350" height="300" src="https://anoce-cvae.github.io/ANOCE-CVAE/RealData/Figures/covid_net.png"/>
 
 
 
