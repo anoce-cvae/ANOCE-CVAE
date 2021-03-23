@@ -1,6 +1,6 @@
 # ANOCE: Analysis of Causal Effects with Multiple Mediators via Constrained Structural Learning
 
-This repository is the official implementation of [`ANOCE: Analysis of Causal Effects with Multiple Mediators via Constrained Structural Learning'](https://openreview.net/pdf?id=7I12hXRi8F).
+This repository is the official implementation of [ANOCE: Analysis of Causal Effects with Multiple Mediators via Constrained Structural Learning](https://openreview.net/pdf?id=7I12hXRi8F).
 
 ## Introduction
 
